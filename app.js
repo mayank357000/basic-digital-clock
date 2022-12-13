@@ -49,25 +49,44 @@
 
 
 
-//making a digital clock
+// //making a digital clock
 
-const clock=document.querySelector('.digital-clock');
+// const clock=document.querySelector('.digital-clock');
 
-const tick=()=>{
-    const now=new Date();
+// const tick=()=>{
+//     const now=new Date();
 
-    const h=now.getHours();
-    const m=now.getMinutes();
-    const s=now.getSeconds();
+//     const h=now.getHours();
+//     const m=now.getMinutes();
+//     const s=now.getSeconds();
 
-    const html=`
-    <span>${h}</span> :
-    <span>${m}</span> :
-    <span>${s}</span>
-    `;
+//     const html=`
+//     <span>${h}</span> :
+//     <span>${m}</span> :
+//     <span>${s}</span>
+//     `;
 
-    clock.innerHTML=html;
-};
+//     clock.innerHTML=html;
+// };
 
-//hr ek sec ke baad fire hoga tick
-setInterval(tick,1000);
+// //hr ek sec ke baad fire hoga tick
+// setInterval(tick,1000);
+
+
+
+// //date fns library using cdn(old version) to get our things done faster
+
+// const now=new Date();
+
+// console.log(dateFns.isToday(now));
+
+// console.log(dateFns.format(now,'YYYY'));
+// console.log(dateFns.format(now,'MMM'));
+// console.log(dateFns.format(now,'dddd'));
+// console.log(dateFns.format(now,'Do'));
+// console.log(dateFns.format(now,'dddd Do MMMM YYYY'));
+
+// // comapring dates
+// const before=new Date('Feb 01 2019 12:00:00');
+
+// console.log(dateFns.distanceInWords(now,before,{addSuffix: true}));
